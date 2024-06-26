@@ -48,7 +48,7 @@
   <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container-fluid ps-3">
         <a
           class="navbar-brand"
           style="font-family: 'Maharlika', sans-serif"
@@ -56,9 +56,9 @@
         >
           <img
             src="img/logo.svg"
-            alt=""
-            width="45"
-            height="45"
+            alt="Logo"
+            width="71"
+            height="50"
             class="d-inline-block align-text-top"
           />
         </a>
@@ -66,48 +66,45 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarNav3"
+          aria-controls="navbarNav3"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="bx bx-menu"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav3"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav text-end">
             <li class="nav-item">
-              <a class="nav-link px-5" aria-current="page" href="index.html"
+              <a class="nav-link px-3" aria-current="page" href="index.html"
                 >HOME</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5" href="profile.html">PROFILE</a>
+              <a class="nav-link px-3" href="profile.html">PROFILE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5" href="technical.html">TECHNICAL</a>
+              <a class="nav-link px-3" href="technical.html">TECHNICAL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5" href="work.html">WORK</a>
+              <a class="nav-link px-3" href="work.html">WORK</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active px-5" href="contact.html">CONTACT</a>
+              <a class="nav-link active px-3" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a
+                class="btn btn-primary btn-md resume"
+                href="https://drive.google.com/file/d/1IkdmVOWan1S2ghORe1Dykd4966aw6Zgu/view?usp=sharing"
+                target="_blank"
+              >
+                <i class="fas fa-file-download me-2"></i> RESUME
+              </a>
             </li>
           </ul>
-        </div>
-
-        <div class="d-flex align-items-end justify-content-end">
-          <a
-            type="button"
-            class="btn btn-primary btn-md resume"
-            href="img/Abusca-RESUME.pdf"
-            download="Abusca-RESUME.pdf"
-            target="_blank"
-          >
-            RESUME
-          </a>
         </div>
       </div>
     </nav>
@@ -154,21 +151,19 @@
       id="section-1"
       style="background-color: #ffffff"
     >
-      <div class="mb-5 mt-5 pt-5 pb-5 container orgs">
+      <div class="container orgs my-3 py-3">
         <div
           class="row gy-3 d-flex align-items-center justify-content-center pb-3"
         >
-          <div class="col-sm-1 col-md-6">
-            <!--MAPS-->
-            <div class="card w-75 shadow-lg p-3">
+          <div class="col-12 col-md-6">
+            <!-- MAPS -->
+            <div class="card shadow-lg p-3">
               <div class="card-body">
                 <h5 class="card-title text-center">LOCATION</h5>
               </div>
-              <div class="ratio ratio-1x1">
+              <div class="ratio ratio-16x9">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241.35100385908035!2d121.0509314!3d14.5639349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c85ea950dae1%3A0xe1d25fdf00b6470c!2s448%20Banaba%2C%20Taguig%2C%201214%20Metro%20Manila!5e0!3m2!1sfil!2sph!4v1704906642496!5m2!1sfil!2sph"
-                  width="600"
-                  height="450"
                   style="border: 0"
                   allowfullscreen=""
                   loading="lazy"
@@ -177,8 +172,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-1 col-md-6 text-start">
-            <!--CONTACTS-->
+          <div class="col-12 col-md-6 text-center pt-3">
+            <!-- CONTACTS -->
             <h1
               class="text-center pb-3"
               style="font-family: 'Maharlika', sans-serif"
@@ -191,7 +186,11 @@
             >
               <div class="card-body">
                 <div class="d-flex align-items-center justify-content-center">
-                  <img src="img/me.svg" alt="" class="img-fluid w-25" />
+                  <img
+                    src="img/me.svg"
+                    alt="Profile Picture"
+                    class="img-fluid w-50 w-md-25"
+                  />
                 </div>
                 <p
                   class="card-title text-center py-3"
@@ -200,81 +199,51 @@
                   CHRISTIAN DREY ABUSCA
                 </p>
                 <div>
-                  <div class="row fs-5 py-3">
-                    <div class="col-auto">
+                  <div class="row fs-5 py-1 justify-content-center">
+                    <div class="col-auto d-flex align-items-center">
                       <i class="bx bxs-envelope"></i>
-                    </div>
-                    <div class="col">
-                      <div
-                        class="shadow-lg contacts d-flex align-items-center justify-content-center"
+                      <a
+                        href="mailto:christianabusca22@gmail.com"
+                        class="ms-2"
+                        style="color: inherit; text-decoration: none"
                       >
-                        <a
-                          href="mailto: christianabusca22@gmail.com
-                            "
-                          subject="subject text"
-                          target="_blank"
-                          style="color: inherit; text-decoration: none"
-                        >
-                          christianabusca22
-                        </a>
-                      </div>
+                        christianabusca22@gmail.com
+                      </a>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto d-flex align-items-center">
                       <i class="bx bxl-facebook-square"></i>
-                    </div>
-                    <div class="col">
-                      <div>
-                        <div
-                          class="shadow-lg contacts d-flex align-items-center justify-content-center"
-                        >
-                          <a
-                            href="https://www.facebook.com/christianabusca22/
-                            "
-                            target="_blank"
-                            style="color: inherit; text-decoration: none"
-                          >
-                            christianabusca22
-                          </a>
-                        </div>
-                      </div>
+                      <a
+                        href="https://www.facebook.com/christianabusca22/"
+                        target="_blank"
+                        class="ms-2"
+                        style="color: inherit; text-decoration: none"
+                      >
+                        christianabusca22
+                      </a>
                     </div>
                   </div>
-                  <div class="row fs-5 py-3">
-                    <div class="col-auto">
+                  <div class="row fs-5 py-1 justify-content-center">
+                    <div class="col-auto d-flex align-items-center">
                       <i class="bx bxl-linkedin-square"></i>
+                      <a
+                        href="https://www.linkedin.com/in/christianabusca/"
+                        target="_blank"
+                        class="ms-2"
+                        style="color: inherit; text-decoration: none"
+                      >
+                        christianabusca
+                      </a>
                     </div>
-                    <div class="col">
-                      <div>
-                        <div
-                          class="shadow-lg contacts d-flex align-items-center justify-content-center"
-                        >
-                          <a
-                            href="https://www.linkedin.com/in/christianabusca/"
-                            target="_blank"
-                            style="color: inherit; text-decoration: none"
-                          >
-                            christianabusca
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="bx bxl-instagram"></i>
-                    </div>
-                    <div class="col">
-                      <div>
-                        <div
-                          class="shadow-lg contacts d-flex align-items-center justify-content-center"
-                        >
-                          <a
-                            href="https://www.instagram.com/c.dreigh/"
-                            target="_blank"
-                            style="color: inherit; text-decoration: none"
-                          >
-                            c.dreigh
-                          </a>
-                        </div>
-                      </div>
+                    <div class="col-auto d-flex align-items-center">
+                      <i class="bx bxl-github"></i>
+                      <a
+                        href="https://github.com/christianabusca"
+                        target="_blank"
+                        class="ms-2"
+                        style="color: inherit; text-decoration: none"
+                      >
+                        christianabusca
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -284,6 +253,7 @@
         </div>
       </div>
     </section>
+
     <!--END OF WEBDEV-->
 
     <!--END OF REWORK-->
@@ -295,72 +265,52 @@
     <div class="container pt-4">
       <!-- Section: Social media -->
       <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://www.facebook.com/christianabusca22/"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-facebook-circle"></i
-        ></a>
+        <div class="d-flex justify-content-center flex-wrap">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://www.facebook.com/christianabusca22/"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
 
-        <!-- Whatsapp -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="mailto: christianabusca22@gmail.com
-          "
-          subject="subject text"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-gmail"></i
-        ></a>
+          <!-- Gmail -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="mailto:christianabusca22@gmail.com"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-gmail"></i
+          ></a>
 
-        <!-- Google -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://g.dev/christianabusca"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-google-cloud"></i
-        ></a>
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://g.dev/christianabusca"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-google-cloud"></i
+          ></a>
 
-        <!-- Instagram -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://www.instagram.com/c.dreigh/"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-instagram"></i
-        ></a>
+          <!-- LinkedIn -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://www.linkedin.com/in/christianabusca/"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
 
-        <!-- Linkedin -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://www.linkedin.com/in/christianabusca/"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-linkedin-square"></i
-        ></a>
-        <!-- Github -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://github.com/christianabusca"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://github.com/christianabusca"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
       </section>
       <!-- Section: Social media -->
     </div>
@@ -381,6 +331,10 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="node_modules/boxicons/dist/boxicons.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
   <script src="node_modules/boxicons/dist/boxicons.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </html>

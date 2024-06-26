@@ -34,6 +34,11 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
@@ -56,9 +61,9 @@
         >
           <img
             src="img/logo.svg"
-            alt=""
-            width="45"
-            height="45"
+            alt="Logo"
+            width="71"
+            height="50"
             class="d-inline-block align-text-top"
           />
         </a>
@@ -71,50 +76,46 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="bx bx-menu"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-center"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav text-end">
             <li class="nav-item">
               <a
-                class="nav-link active px-5"
+                class="nav-link active px-3"
                 aria-current="page"
                 href="index.html"
                 >HOME</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5" href="profile.html">PROFILE</a>
+              <a class="nav-link px-3" href="profile.html">PROFILE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5" href="technical.html">TECHNICAL</a>
+              <a class="nav-link px-3" href="technical.html">TECHNICAL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5" href="work.html">WORK</a>
+              <a class="nav-link px-3" href="work.html">WORK</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5" href="contact.html">CONTACT</a>
+              <a class="nav-link px-3" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a
+                class="btn btn-primary btn-md resume"
+                href="https://drive.google.com/file/d/1IkdmVOWan1S2ghORe1Dykd4966aw6Zgu/view?usp=sharing"
+                target="_blank"
+              >
+                <i class="fas fa-file-download me-2"></i> RESUME
+              </a>
             </li>
           </ul>
         </div>
-
-        <div class="d-flex align-items-end justify-content-end">
-          <a
-            type="button"
-            class="btn btn-primary btn-md resume"
-            href="img/Abusca-RESUME.pdf"
-            download="Abusca-RESUME.pdf"
-            target="_blank"
-          >
-            RESUME
-          </a>
-        </div>
       </div>
     </nav>
-    <!--Navbar-->
 
     <!--BODY-->
     <section
@@ -126,7 +127,7 @@
         <div
           class="row py-5 gy-3 d-flex align-items-center justify-content-center"
         >
-          <div class="col-sm-9 col-md-7">
+          <div class="col-lg-6 col-md-7">
             <div class="card bg-transparent align-items-center" id="card">
               <div class="card-body">
                 <div class="d-flex text-start">
@@ -149,8 +150,15 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-2 col-md-5">
-            <img src="img/me.svg" alt="" class="img-fluid" />
+          <div
+            class="col-lg-6 col-md-5 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="img/me.svg"
+              alt=""
+              class="img-fluid w-75"
+              style="max-width: 400px"
+            />
           </div>
         </div>
       </div>
@@ -164,7 +172,7 @@
       style="background-color: #ebdede"
     >
       <div class="mb-1 mt-1 container orgs">
-        <div>
+        <div class="pt-2">
           <h1
             class="card-title text-dark text-start pt-3 text-center"
             style="font-family: 'Maharlika', sans-serif"
@@ -173,16 +181,16 @@
           </h1>
         </div>
         <div
-          class="row gy-3 d-flex align-items-center justify-content-center pb-3"
+          class="row gy-3 d-flex align-items-center justify-content-center pb-3 pt-3"
         >
-          <div class="col-sm-1 col-md-3 text-center">
-            <img src="img/gdsc.svg" alt="" class="img-fluid w-50" />
+          <div class="col-4 col-sm-4 col-md-3 text-center">
+            <img src="img/gdsc.svg" alt="GDSC" class="img-fluid w-75" />
           </div>
-          <div class="col-sm-1 col-md-3 text-center">
-            <img src="img/sets.svg" alt="" class="img-fluid w-50" />
+          <div class="col-4 col-sm-4 col-md-3 text-center">
+            <img src="img/sets.svg" alt="SETS" class="img-fluid w-75" />
           </div>
-          <div class="col-sm-1 col-md-3 text-center">
-            <img src="img/aws.svg" alt="" class="img-fluid w-50" />
+          <div class="col-4 col-sm-4 col-md-3 text-center">
+            <img src="img/aws.svg" alt="AWS" class="img-fluid w-75" />
           </div>
         </div>
       </div>
@@ -195,7 +203,7 @@
       id="section-1"
       style="background-color: #ffffff"
     >
-      <div class="mb-5 mt-5 pt-5 pb-5 container orgs">
+      <div class="mb-3 mt-3 pt-3 pb-3 container orgs">
         <div class="pb-3">
           <h1 style="font-family: 'Maharlika', sans-serif; color: #5c452c">
             WEB DEVELOPMENT SKILLS AS <br />A JUNIOR DEVELOPER.
@@ -255,19 +263,19 @@
         <div
           class="row pt-5 pb-5 gy-3 d-flex align-items-center justify-content-center pb-3"
         >
-          <div class="col-sm-1 col-md-2 text-center">
+          <div class="col-4 col-sm-4 col-md-2 text-center">
             <img src="img/webdevelopment/1.svg" alt="" class="img-fluid w-50" />
           </div>
-          <div class="col-sm-1 col-md-2 text-center">
+          <div class="col-4 col-sm-4 col-md-2 text-center">
             <img src="img/webdevelopment/2.svg" alt="" class="img-fluid w-50" />
           </div>
-          <div class="col-sm-1 col-md-2 text-center">
+          <div class="col-4 col-sm-4 col-md-2 text-center">
             <img src="img/webdevelopment/3.svg" alt="" class="img-fluid w-50" />
           </div>
-          <div class="col-sm-1 col-md-2 text-center">
+          <div class="col-4 col-sm-4 col-md-2 text-center">
             <img src="img/webdevelopment/4.svg" alt="" class="img-fluid w-50" />
           </div>
-          <div class="col-sm-1 col-md-2 text-center">
+          <div class="col-4 col-sm-4 col-md-2 text-center">
             <img src="img/webdevelopment/5.svg" alt="" class="img-fluid w-50" />
           </div>
         </div>
@@ -291,10 +299,10 @@
       id="section-1"
       style="background-color: #252721"
     >
-      <div class="mb-5 mt-5 pt-5 pb-5 container text-white orgs">
+      <div class="mb-2 mt-2 pt-2 pb-2 container text-white orgs">
         <div class="pb-5">
           <h1
-            class="text-end"
+            class="text-end pt-3"
             style="font-family: 'Maharlika', sans-serif; color: #e4be96"
           >
             RECENT WORK
@@ -303,7 +311,7 @@
         <div
           class="row gy-3 d-flex align-items-center justify-content-center pb-3"
         >
-          <div class="col-sm-4 col-md-4">
+          <div class="col-4 col-sm-2 col-md-4">
             <div
               class="card align-items-center border-0 carding"
               style="background-color: transparent"
@@ -314,18 +322,16 @@
               >
                 <img
                   src="img/projects/1.svg"
-                  class="card-img-top pt-2 id-excempt mx-auto d-block"
-                  alt="..."
+                  class="card-img-top pt-2 id-excempt img-fluid w-75 mx-auto d-block"
+                  alt="Kusina Express"
                 />
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title text-center text-white">
-                  Kusina Express
-                </h5>
+                <h5 class="card-title text-white proj-text">Kusina Express</h5>
               </div>
             </div>
           </div>
-          <div class="col-sm-4 col-md-4">
+          <div class="col-4 col-sm-2 col-md-4">
             <div
               class="card align-items-center border-0 carding"
               style="background-color: transparent"
@@ -336,18 +342,18 @@
               >
                 <img
                   src="img/projects/2.svg"
-                  class="card-img-top pt-2 id-excempt mx-auto d-block"
-                  alt="..."
+                  class="card-img-top pt-2 id-excempt img-fluid w-75 mx-auto d-block"
+                  alt="Investigating Netflix Movies"
                 />
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title text-center text-white">
+                <h5 class="card-title text-white proj-text">
                   Investigating Netflix Movies
                 </h5>
               </div>
             </div>
           </div>
-          <div class="col-sm-4 col-md-4">
+          <div class="col-4 col-sm-2 col-md-4">
             <div
               class="card align-items-center border-0 carding"
               style="background-color: transparent"
@@ -358,12 +364,12 @@
               >
                 <img
                   src="img/projects/3.svg"
-                  class="card-img-top pt-2 id-excempt mx-auto d-block"
-                  alt="..."
+                  class="card-img-top pt-2 id-excempt img-fluid w-75 mx-auto d-block"
+                  alt="Snake Game"
                 />
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title text-center text-white">Snake Game</h5>
+                <h5 class="card-title text-white proj-text">Snake Game</h5>
               </div>
             </div>
           </div>
@@ -373,16 +379,11 @@
             type="button"
             class="btn btn-primary btn-md projects"
             href="work.html"
+            >View More Projects</a
           >
-            View More Projects
-          </a>
         </div>
       </div>
     </section>
-    <a href="#" class="back-to-top">
-      <i class="bx bx-chevron-up spanning"></i>
-    </a>
-    <!--END OF REWORK-->
   </body>
   <!-- FOOTER -->
 
@@ -391,72 +392,52 @@
     <div class="container pt-4">
       <!-- Section: Social media -->
       <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://www.facebook.com/christianabusca22/"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-facebook-circle"></i
-        ></a>
+        <div class="d-flex justify-content-center flex-wrap">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://www.facebook.com/christianabusca22/"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
 
-        <!-- Whatsapp -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="mailto: christianabusca22@gmail.com
-          "
-          subject="subject text"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-gmail"></i
-        ></a>
+          <!-- Gmail -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="mailto:christianabusca22@gmail.com"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-gmail"></i
+          ></a>
 
-        <!-- Google -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://g.dev/christianabusca"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-google-cloud"></i
-        ></a>
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://g.dev/christianabusca"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-google-cloud"></i
+          ></a>
 
-        <!-- Instagram -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://www.instagram.com/c.dreigh/"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-instagram"></i
-        ></a>
+          <!-- LinkedIn -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://www.linkedin.com/in/christianabusca/"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
 
-        <!-- Linkedin -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://www.linkedin.com/in/christianabusca/"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-linkedin-square"></i
-        ></a>
-        <!-- Github -->
-        <a
-          data-mdb-ripple-init
-          class="btn btn-link btn-floating btn-lg text-body m-1"
-          href="https://github.com/christianabusca"
-          role="button"
-          data-mdb-ripple-color="dark"
-          target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://github.com/christianabusca"
+            role="button"
+            target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
       </section>
       <!-- Section: Social media -->
     </div>
@@ -469,6 +450,7 @@
     </div>
     <!-- Copyright -->
   </footer>
+
   <script src="js/index.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/bootstrap.bundle.min.js.map"></script>
@@ -477,6 +459,18 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
   <script src="node_modules/boxicons/dist/boxicons.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script>
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        const navbarCollapse = document.getElementById("navbarNav");
+        if (navbarCollapse.classList.contains("show")) {
+          new bootstrap.Collapse(navbarCollapse).toggle();
+        }
+      });
+    });
+  </script>
 </html>

@@ -34,7 +34,6 @@
 
 .id-excempt {
     border-radius: 25px !important;
-    max-width: 75% !important;
 }
 
 .projects{
@@ -106,3 +105,32 @@ html {
 	transform: translateY(-4px);
     color: #252721;
 }
+
+.proj-text {
+    font-size: 1rem; /* Adjust the base font size as needed */
+  }
+  
+  @media (max-width: 1200px) {
+    .proj-text {
+      font-size: 0.9rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .proj-text {
+      font-size: 0.8rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .proj-text {
+      font-size: 0.7rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .proj-text {
+      font-size: 0.6rem; /* Adjust for smaller screens */
+    }
+  }
+  

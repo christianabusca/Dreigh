@@ -48,3 +48,60 @@
 @keyframes fade-in {
     to {scale:1; opacity:1;}
 }
+
+.custom-card-title {
+    font-size: 1rem; /* Adjust the base font size as needed */
+  }
+  
+  @media (max-width: 1200px) {
+    .custom-card-title {
+      font-size: 0.9rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .custom-card-title {
+      font-size: 0.8rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .custom-card-title {
+      font-size: 0.7rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .custom-card-title {
+      font-size: 0.6rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  .org-text {
+    font-size: 1rem; /* Adjust the base font size as needed */
+  }
+  
+  @media (max-width: 1200px) {
+    .org-text {
+      font-size: 0.9rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .org-text {
+      font-size: 0.8rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .org-text {
+      font-size: 0.7rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .org-text {
+      font-size: 0.6rem; /* Adjust for smaller screens */
+    }
+  }
+  
