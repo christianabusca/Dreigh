@@ -107,24 +107,52 @@ html {
 }
 
 .proj-text {
-    font-size: 1rem; /* Adjust the base font size as needed */
+    font-size: 1rem; 
   }
   
   @media (max-width: 1200px) {
     .proj-text {
-      font-size: 0.9rem; /* Adjust for smaller screens */
+      font-size: 0.9rem;
     }
   }
   
   @media (max-width: 992px) {
     .proj-text {
-      font-size: 0.8rem; /* Adjust for smaller screens */
+      font-size: 0.8rem;
     }
   }
   
   @media (max-width: 768px) {
     .proj-text {
-      font-size: 0.7rem; /* Adjust for smaller screens */
+      font-size: 0.7rem; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .proj-text {
+      font-size: 0.6rem;
+    }
+  }
+
+  .certs {
+    font-size: 1rem; 
+  }
+  
+  @media (max-width: 1200px) {
+    .certs {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .certs {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .certs {
+      font-size: 0.7rem; 
     }
   }
   
